@@ -24,6 +24,32 @@ python ioc_checker.py 185.220.101.45 --no-llm
 python ioc_checker.py -f iocs.txt
 ```
 
+## Ollama triage note (optional)
+
+If [Ollama](https://ollama.com) is installed and running, the tool adds a short
+AI-written triage note under the results. It's purely descriptive — it never
+changes a verdict. The tool works fine without it.
+
+```bash
+# 1. install Ollama, then start the service (usually runs automatically)
+ollama serve
+
+# 2. pull a model (default is llama3.2)
+ollama pull llama3.2
+
+# 3. install the python client so the tool can talk to Ollama
+pip install ollama
+
+# 4. just run normally — the triage note appears automatically
+python ioc_checker.py 185.220.101.45 evil-c2.example
+
+# use a different model
+python ioc_checker.py 185.220.101.45 --model mistral
+
+# turn the note off for any run
+python ioc_checker.py 185.220.101.45 --no-llm
+```
+
 ## Lists
 
 Blocklists live in `lists/` as plain text — one indicator per line, optional
