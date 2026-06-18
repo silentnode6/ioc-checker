@@ -4,6 +4,10 @@ A small CLI that checks IPs, domains, and file hashes against local blocklists.
 The lookup decides the verdict; if Ollama is installed, a local model writes a
 short triage note on top — it never changes the verdict.
 
+## Demo
+
+![IOC Checker demo](assets/demo.png)
+
 ## Install
 
 ```bash
