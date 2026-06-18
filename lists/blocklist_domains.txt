@@ -1,0 +1,7 @@
+# Local domain blocklist
+# Format: <indicator>  [# optional analyst note]
+
+evil-c2.example       # Known C2 callback domain (APT-Demo)
+secure-login-update.example   # Credential phishing kit, mimics O365
+malware-drop.example  # Stage-2 payload host
+update-flash-player.example   # Classic fake-update social engineering

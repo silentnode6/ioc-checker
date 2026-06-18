@@ -1,0 +1,6 @@
+# Local file-hash blocklist (MD5 / SHA-1 / SHA-256)
+# Format: <indicator>  [# optional analyst note]
+
+44d88612fea8a8f36de82e1278abb02f   # EICAR test file (MD5)
+275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f   # EICAR test file (SHA-256)
+e99a18c428cb38d5f260853678922e03   # Demo: trojan dropper sample (MD5)

@@ -1,0 +1,8 @@
+# Local IP blocklist
+# Format: <indicator>  [# optional analyst note]
+# Lines starting with # are ignored.
+
+185.220.101.45    # Tor exit node seen in brute-force attempts
+45.137.21.9       # Cobalt Strike C2, internal IR ticket SEC-1042
+193.106.191.21    # Scanning activity, mass SSH login failures
+1.2.3.4           # Test indicator (RFC-bogon, used for demos)
